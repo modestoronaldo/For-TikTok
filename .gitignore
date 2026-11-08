@@ -1,0 +1,7 @@
+node_modules/
+frames/
+preview/
+*.wav
+*.png
+*.mp4
+__pycache__/
