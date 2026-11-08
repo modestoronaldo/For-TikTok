@@ -25,3 +25,18 @@ Esta guía es para la sesión programada que crea cada video. Cada video es **or
 8. Render completo con `node render.js`, luego:
    `ffmpeg -framerate 24 -i frames/%04d.png -i audio/mezcla.wav -c:v libx264 -preset slow -crf 15 -pix_fmt yuv420p -c:a aac -b:a 256k -shortest -movflags +faststart salida/AAAA-MM-DD_HH.mp4`
 9. Enviar el mp4 al usuario y anotar el video en `historial.md` (personajes, lugares, guion) para no repetir.
+
+## Video según la hora
+La tarea corre dos veces al día. Mira la hora con `date -u +%H`.
+
+### 🌤️ Mediodía (12–23 UTC, mediodía en Latinoamérica)
+- **Tono:** esperanzador y con ánimo para seguir el día. Puede tener un toque melancólico, pero termina luminoso.
+- **Ambiente:** amanecer o tarde soleada, cielo naranja-rosado o celeste, luz cálida y dorada, pájaros, flores, parques, ventanas con sol, una cocina por la mañana, un camino con árboles.
+- **Mensajes (ejemplos de tema, escribe frases nuevas):** hoy también puedes, ve a tu ritmo, date un respiro, no tienes que tenerlo todo resuelto.
+- **Música:** tonalidad mayor o menor luminosa (por ejemplo, Do mayor o Fa mayor), un poco más ágil.
+
+### 🌙 Noche (0–11 UTC, noche en Latinoamérica)
+- **Tono:** melancólico y de consuelo, cálido al final.
+- **Ambiente:** noche, lluvia, estrellas, luna, luces cálidas, lugares acogedores o solitarios (estación, balcón, faro, muelle, ventana con lluvia).
+- **Mensajes (ejemplos de tema, escribe frases nuevas):** descansa, ya hiciste suficiente; está bien extrañar; tu yo del pasado estaría orgulloso; mañana es otra oportunidad.
+- **Música:** tonalidad menor, lenta (como el primer video).
