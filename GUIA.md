@@ -81,3 +81,17 @@ Cada video es una **reflexión sobre un tema diferente**. Elige el primer tema d
 - [ ] La boca se mueve con la voz y hay movimiento en cada escena (parpadeos, viento, luces).
 - [ ] Música, sonidos de ambiente y voz bien mezclados (−14 LUFS).
 - [ ] El tema, los personajes y el lugar son distintos a los de `historial.md`.
+
+## Personajes: nunca se repiten
+**Regla obligatoria:** cada video tiene personajes **completamente nuevos**. Antes de diseñar, revisa `personajes_usados.md`. Un personaje cuenta como repetido si coincide en **especie + color de pelaje + ropa o accesorio principal**. Lo ideal es cambiar también de especie respecto al video anterior.
+
+- Cambia la **especie** (no uses la misma en dos videos seguidos) y el **color** (blanco, gris, negro, crema, café, manchado, tricolor, rubio, pelirrojo...).
+- Cambia la **ropa o el accesorio** (gorro, bufanda, suéter, overol, mochila, paraguas, lentes, moño, chaleco, botas de lluvia, audífonos, mantita...).
+- Cambia los **rasgos**: forma de las orejas, cola, ojos, una manchita, pecas, un diente, una curita.
+- Dales un **nombre** propio a cada uno para registrarlos.
+- Siempre de **diseño propio**: nunca personajes conocidos de películas, series, juegos, marcas ni de otros creadores.
+
+### Banco de ideas (punto de partida, combínalos de formas nuevas)
+Perrito salchicha café con suéter de rombos · pingüino pequeño con bufanda roja · osito panda con audífonos · patito amarillo con botas de lluvia · zorrito con mochila verde · conejita gris con lentes redondos · mapache con mantita de cuadros · tortuguita con gorro de lana · erizo con paraguas de lunares · ovejita con moño · ratoncito con chaleco · búho pequeño con pijama · koala con taza de chocolate · foca bebé con gorrito · perrito blanco con manchita en el ojo · gatito negro con collar de cascabel · hámster con overol · ardilla con bellota de llavero · cervatillo con pañuelo · nutria con estrellita en la mano · polluelo con casco de bici · vaquita de peluche con campanita · alpaca con poncho · elefantito con globo.
+
+Al terminar, **agrega los personajes del video a `personajes_usados.md`**.
