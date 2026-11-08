@@ -40,3 +40,44 @@ La tarea corre dos veces al día. Mira la hora con `date -u +%H`.
 - **Ambiente:** noche, lluvia, estrellas, luna, luces cálidas, lugares acogedores o solitarios (estación, balcón, faro, muelle, ventana con lluvia).
 - **Mensajes (ejemplos de tema, escribe frases nuevas):** descansa, ya hiciste suficiente; está bien extrañar; tu yo del pasado estaría orgulloso; mañana es otra oportunidad.
 - **Música:** tonalidad menor, lenta (como el primer video).
+
+## Reflexiones: un tema distinto en cada video
+Cada video es una **reflexión sobre un tema diferente**. Elige el primer tema del banco que **no** aparezca en `historial.md` y que encaje con la hora (🌤️ mediodía / 🌙 noche / ✨ ambos). Cuando se acaben, vuelve a empezar con una mirada nueva.
+
+| # | Tema | Hora | Idea de historia (como punto de partida, no como guion) |
+|---|---|---|---|
+| 1 | Extrañar a mamá o papá | 🌙 | Alguien guarda la bufanda que le tejieron; la llamada que siempre se pospone |
+| 2 | Amistad que se alejó | 🌙 | Dos amigos que antes compartían banca y ahora solo un "me gusta" |
+| 3 | Ansiedad | ✨ | Un personaje carga una nube pequeña que crece; aprende a respirar con ella |
+| 4 | Amor propio | 🌤️ | Se mira en un charco y por fin se sonríe |
+| 5 | Mascota que ya no está | 🌙 | El plato vacío, la correa colgada, una estrella que brilla |
+| 6 | Migrar / estar lejos de casa | 🌙 | Un pajarito en una ciudad gigante, una videollamada con la abuela |
+| 7 | Empezar de nuevo | 🌤️ | Una semilla que se cae de la maceta y brota en otro lugar |
+| 8 | Paciencia, todo a su tiempo | 🌤️ | Una tortuguita que llega tarde, pero llega |
+| 9 | Descansar sin culpa | 🌙 | Un osito apaga la lámpara y deja la lista de pendientes |
+| 10 | Gratitud por lo pequeño | 🌤️ | Pan caliente, una ventana con sol, un mensaje de buenos días |
+| 11 | Soledad acompañada | 🌙 | Dos ventanas iluminadas en edificios distintos, dos personajes despiertos |
+| 12 | Fracasar y seguir | 🌤️ | Un patito que se cae intentando volar y lo vuelve a intentar |
+| 13 | Crecer y dejar la infancia | 🌙 | Un juguete viejo en una caja, recuerdos que se vuelven luz |
+| 14 | Perdonarse | ✨ | Un personaje recoge los pedazos de una taza y hace un jarrón con ellos |
+| 15 | Hermanos | ✨ | Uno mayor que cuida y uno menor que admira |
+| 16 | Amor que terminó | 🌙 | Dos tazas en la mesa, ahora una; aprender a tomar el té solo |
+| 17 | Sueños que todavía esperan | 🌤️ | Una maleta lista debajo de la cama |
+| 18 | Cuidar a quien te cuida | ✨ | Un hijo que ahora tapa con una manta al abuelo |
+| 19 | Cansancio de ser fuerte | 🌙 | Un personaje que siempre sostiene el paraguas para otros, y alguien se lo sostiene a él |
+| 20 | El primer día de algo | 🌤️ | Mochila nueva, nervios, una puerta grande |
+
+## Reglas de creatividad
+- **Personajes nuevos en cada video**, tiernos y comunes (gatitos, perritos, ositos, patitos, conejitos, pingüinos, tortuguitas, pajaritos, zorritos, mapaches...), siempre de diseño propio.
+- **Varía la estructura.** No siempre una llamada telefónica. Otras formas: una carta que se lee, un recuerdo (flashback), un antes y un después, un diálogo entre dos personajes, un personaje que habla solo, una voz que narra.
+- **Varía los lugares y el clima:** cocina, tren, playa, nieve, azotea, parque, hospital, aeropuerto, bosque, invernadero, autobús de noche...
+- **Un detalle simbólico** en cada video, que diga algo sin palabras (como la lágrima o las orejitas que se levantan).
+- **Un giro emocional** al final: el personaje cambia, entiende algo o recibe un gesto.
+- **Frases propias.** Nunca citas famosas, letras de canciones ni textos de otros autores.
+
+## Control de calidad antes de enviar
+- [ ] Las vistas previas se revisaron y los personajes se ven tiernos y expresivos, sin piezas mal ubicadas.
+- [ ] Los subtítulos coinciden con la voz y se leen bien.
+- [ ] La boca se mueve con la voz y hay movimiento en cada escena (parpadeos, viento, luces).
+- [ ] Música, sonidos de ambiente y voz bien mezclados (−14 LUFS).
+- [ ] El tema, los personajes y el lugar son distintos a los de `historial.md`.
