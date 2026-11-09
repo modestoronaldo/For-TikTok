@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>@font-face{font-family:'Fredoka';font-weight:700;src:url('../organos/node_modules/@fontsource/fredoka/files/fredoka-latin-700-normal.woff2') format('woff2');}body{margin:0}</style></head>
+<body><canvas id="logo" width="800" height="800"></canvas><canvas id="banner" width="2560" height="1440"></canvas>
+<script>
+const TAU = Math.PI * 2, INK = '#1d1030';
+const masc = new Image(); masc.src = 'kurioso_c.png';
+function rnd(s){let a=s>>>0;return()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function burst(g, cx, cy, n, R, c1, c2) { g.save(); g.translate(cx, cy); for (let k = 0; k < n; k++) { g.fillStyle = k % 2 ? c1 : c2; g.beginPath(); g.moveTo(0, 0); g.arc(0, 0, R, k / n * TAU, (k + 1) / n * TAU); g.closePath(); g.fill(); } g.restore(); }
+function texto(g, txt, x, y, size, fill, rot) {
+  g.save(); g.translate(x, y); g.rotate(rot || 0); g.font = `700 ${size}px Fredoka`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
+  g.lineWidth = size * 0.24; g.strokeStyle = INK; g.strokeText(txt, 0, size * 0.06); g.strokeText(txt, 0, 0); g.fillStyle = fill; g.fillText(txt, 0, 0); g.restore();
+}
+function iconos(g, W, H, safe) { // signos y figuras de temas variados fuera de la zona segura
+  const r = rnd(7), cols = ['#ffd23f', '#ff5e7e', '#5bc0eb', '#7ae582', '#ffffff', '#b98cff'];
+  for (let i = 0; i < 70; i++) {
+    const x = r() * W, y = r() * H; if (x > safe[0] - 40 && x < safe[2] + 40 && y > safe[1] - 40 && y < safe[3] + 40) continue;
+    const s = 26 + r() * 46, c = cols[i % cols.length], k = i % 5;
+    g.save(); g.translate(x, y); g.rotate((r() - 0.5) * 0.8); g.globalAlpha = 0.85;
+    if (k === 0) { g.font = `700 ${s * 1.6}px Fredoka`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineWidth = s * 0.25; g.strokeStyle = INK; g.strokeText('?', 0, 0); g.fillStyle = c; g.fillText('?', 0, 0); }
+    else if (k === 1) { g.beginPath(); for (let j = 0; j < 10; j++) { const a = j / 10 * TAU - Math.PI / 2, rr = j % 2 ? s * 0.4 : s; g.lineTo(Math.cos(a) * rr, Math.sin(a) * rr); } g.closePath(); g.fillStyle = c; g.fill(); g.lineWidth = 6; g.strokeStyle = INK; g.stroke(); }
+    else if (k === 2) { g.beginPath(); g.arc(0, 0, s * 0.7, 0, TAU); g.fillStyle = c; g.fill(); g.lineWidth = 6; g.strokeStyle = INK; g.stroke(); g.beginPath(); g.ellipse(0, 0, s * 1.15, s * 0.3, -0.4, 0, TAU); g.lineWidth = 7; g.stroke(); }
+    else if (k === 3) { g.beginPath(); g.moveTo(0, -s); g.quadraticCurveTo(s * 0.9, -s * 0.2, 0, s); g.quadraticCurveTo(-s * 0.9, -s * 0.2, 0, -s); g.fillStyle = c; g.fill(); g.lineWidth = 6; g.strokeStyle = INK; g.stroke(); g.beginPath(); g.moveTo(0, -s * 0.8); g.lineTo(0, s * 0.85); g.stroke(); }
+    else { g.beginPath(); g.arc(0, 0, s * 0.35, 0, TAU); g.fillStyle = c; g.fill(); }
+    g.restore();
+  }
+}
+window.dibujar = async () => {
+  await Promise.all([document.fonts.load('700 100px Fredoka'), new Promise(r => masc.complete ? r() : masc.onload = r)]);
+  // ---------- LOGO 800x800 ----------
+  let g = document.getElementById('logo').getContext('2d');
+  let gr = g.createRadialGradient(400, 380, 50, 400, 400, 560); gr.addColorStop(0, '#ffe07a'); gr.addColorStop(0.55, '#ff9a3c'); gr.addColorStop(1, '#e8436a');
+  g.fillStyle = gr; g.fillRect(0, 0, 800, 800);
+  burst(g, 400, 420, 24, 900, 'rgba(255,255,255,0.13)', 'rgba(255,255,255,0)');
+  const sc = 800 / masc.height * 0.9;
+  g.save(); g.shadowColor = 'rgba(60,0,40,0.45)'; g.shadowBlur = 30; g.shadowOffsetY = 12;
+  g.drawImage(masc, 400 - masc.width * sc / 2, 790 - masc.height * sc, masc.width * sc, masc.height * sc); g.restore();
+  // ---------- BANNER 2560x1440 (zona segura central 1546x423) ----------
+  g = document.getElementById('banner').getContext('2d');
+  gr = g.createLinearGradient(0, 0, 2560, 1440); gr.addColorStop(0, '#2bb5c6'); gr.addColorStop(0.5, '#7b5cff'); gr.addColorStop(1, '#ff5e9a');
+  g.fillStyle = gr; g.fillRect(0, 0, 2560, 1440);
+  burst(g, 1280, 720, 36, 2000, 'rgba(255,255,255,0.08)', 'rgba(255,255,255,0)');
+  const safe = [507, 508, 2053, 931];
+  iconos(g, 2560, 1440, safe);
+  // banda clara detrás del texto
+  g.fillStyle = 'rgba(20,8,40,0.25)'; g.beginPath(); g.roundRect(safe[0], safe[1] + 20, safe[2] - safe[0], safe[3] - safe[1] - 40, 60); g.fill();
+  const ms = 440 / masc.height;
+  g.save(); g.shadowColor = 'rgba(20,0,40,0.5)'; g.shadowBlur = 30; g.shadowOffsetY = 10;
+  g.drawImage(masc, 600, 930 - masc.height * ms - 4, masc.width * ms, masc.height * ms); g.restore();
+  texto(g, 'Soy Kurioso', 1430, 650, 200, '#ffffff', -0.03);
+  texto(g, 'Cosas que no sabías, explicadas con humor', 1430, 820, 62, '#ffd23f', -0.03);
+  return [document.getElementById('logo').toDataURL('image/png'), document.getElementById('banner').toDataURL('image/png')];
+};
+</script></body></html>
