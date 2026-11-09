@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>@font-face{font-family:'Fredoka';font-weight:700;src:url('../organos/node_modules/@fontsource/fredoka/files/fredoka-latin-700-normal.woff2') format('woff2');}body{margin:0}</style></head>
+<body><canvas id="logo" width="800" height="800"></canvas><canvas id="banner" width="2560" height="1440"></canvas>
+<script>
+const TAU = Math.PI * 2, INK = '#1d1030';
+const SRC = { k: 'kurioso_c.png', eti: '../organos/img/eti_c.png', cer: '../organos/img/cerebro_c.png', hig: '../organos/img/higado_c.png', ri: '../organos/img/rinon2_c.png' };
+const IM = {};
+const ready = Promise.all(Object.entries(SRC).map(([k, s]) => new Promise(r => { const i = new Image(); i.onload = () => { IM[k] = i; r(); }; i.src = s; })));
+function txt(g, t, x, y, size, fill, rot) {
+  g.save(); g.translate(x, y); g.rotate(rot || 0); g.font = `700 ${size}px Fredoka`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
+  g.lineWidth = size * 0.26; g.strokeStyle = INK; g.strokeText(t, 0, size * 0.07); g.strokeText(t, 0, 0); g.fillStyle = fill; g.fillText(t, 0, 0); g.restore();
+}
+// Insignia: lupa con el nombre dentro
+function insignia(g, cx, cy, R, rot) {
+  g.save(); g.translate(cx, cy); g.rotate(rot || 0);
+  // mango
+  g.save(); g.rotate(0.75); g.lineCap = 'round';
+  g.strokeStyle = INK; g.lineWidth = R * 0.42; g.beginPath(); g.moveTo(R * 0.95, 0); g.lineTo(R * 1.75, 0); g.stroke();
+  g.strokeStyle = '#ff5e7e'; g.lineWidth = R * 0.28; g.stroke();
+  g.strokeStyle = 'rgba(255,255,255,0.35)'; g.lineWidth = R * 0.07; g.beginPath(); g.moveTo(R * 1.05, -R * 0.06); g.lineTo(R * 1.65, -R * 0.06); g.stroke();
+  g.restore();
+  // aro amarillo
+  g.beginPath(); g.arc(0, 0, R, 0, TAU); g.fillStyle = INK; g.fill();
+  g.beginPath(); g.arc(0, 0, R * 0.93, 0, TAU); g.fillStyle = '#ffd23f'; g.fill();
+  g.beginPath(); g.arc(0, 0, R * 0.8, 0, TAU); g.fillStyle = INK; g.fill();
+  // vidrio turquesa
+  const gr = g.createRadialGradient(-R * 0.3, -R * 0.35, R * 0.1, 0, 0, R * 0.8); gr.addColorStop(0, '#9ff2ee'); gr.addColorStop(1, '#16a6b6');
+  g.beginPath(); g.arc(0, 0, R * 0.74, 0, TAU); g.fillStyle = gr; g.fill();
+  g.fillStyle = 'rgba(255,255,255,0.45)'; g.beginPath(); g.ellipse(-R * 0.38, -R * 0.42, R * 0.2, R * 0.09, -0.7, 0, TAU); g.fill();
+  txt(g, 'SOY', 0, -R * 0.3, R * 0.32, '#ffd23f', -0.06);
+  txt(g, 'KURIOSO', 0, R * 0.12, R * 0.36, '#ffffff', -0.06);
+  g.restore();
+}
+function pj(g, k, x, y, h, rot, flip) { const i = IM[k], s = h / i.height; g.save(); g.translate(x, y); g.rotate(rot || 0); g.scale(s * (flip ? -1 : 1), s); g.drawImage(i, -i.width / 2, -i.height); g.restore(); }
+window.dibujar = async () => {
+  await Promise.all([ready, document.fonts.load('700 100px Fredoka')]);
+  // ---------- LOGO ----------
+  let g = document.getElementById('logo').getContext('2d');
+  let gr = g.createRadialGradient(330, 300, 40, 400, 400, 520); gr.addColorStop(0, '#4fd9e6'); gr.addColorStop(1, '#1867c9');
+  g.fillStyle = gr; g.fillRect(0, 0, 800, 800);
+  g.fillStyle = 'rgba(255,255,255,0.12)'; g.beginPath(); g.ellipse(300, 230, 260, 150, -0.5, 0, TAU); g.fill();
+  insignia(g, 360, 360, 255, -0.08);
+  // ---------- BANNER (zona segura 507..2053 x 508..931) ----------
+  g = document.getElementById('banner').getContext('2d');
+  g.fillStyle = '#7fd6e8'; g.fillRect(0, 0, 2560, 1440);
+  g.fillStyle = 'rgba(255,255,255,0.18)'; for (let k = 0; k < 14; k++) { g.beginPath(); g.arc(150 + k * 190, 1440 - (k % 3) * 40, 90 + (k % 4) * 30, 0, TAU); g.fill(); }
+  g.fillStyle = '#5cc2d8'; g.fillRect(0, 1250, 2560, 190);
+  // personajes fuera de la zona segura (se ven en TV/PC grande)
+  pj(g, 'cer', 300, 1240, 620, 0.04);
+  pj(g, 'hig', 2280, 1260, 600, -0.03, true);
+  // dentro de la zona segura
+  pj(g, 'k', 760, 935, 420, -0.05);
+  insignia(g, 1280, 705, 180, -0.06);
+  pj(g, 'eti', 1770, 935, 330, 0.08);
+  pj(g, 'ri', 1960, 935, 300, -0.06, true);
+  txt(g, '¡Cosas que no sabías, con humor!', 1280, 1330, 70, '#ffffff', 0);
+  return [document.getElementById('logo').toDataURL('image/png'), document.getElementById('banner').toDataURL('image/png')];
+};
+</script></body></html>
