@@ -52,9 +52,6 @@ window.dibujar = async () => {
   rayos(g, 400, 330, 32, 700, 'rgba(255,255,255,0.08)');
   gr = g.createRadialGradient(400, 300, 10, 400, 300, 300); gr.addColorStop(0, 'rgba(255,220,120,0.55)'); gr.addColorStop(1, 'rgba(255,220,120,0)'); g.fillStyle = gr; g.fillRect(0, 0, 800, 800);
   // anillo de puntitos
-  for (let k = 0; k < 40; k++) { const a = k / 40 * TAU; g.beginPath(); g.arc(400 + Math.cos(a) * 372, 400 + Math.sin(a) * 372, k % 2 ? 6 : 10, 0, TAU); g.fillStyle = k % 2 ? '#ffd23f' : '#4ff0ff'; g.fill(); }
-  for (const [x, y, r, c] of [[150, 170, 30, '#ffd23f'], [655, 190, 24, '#4ff0ff'], [120, 430, 18, '#ff5e9a'], [690, 420, 20, '#ffd23f']]) estrella(g, x, y, r, c, 0.3);
-  destello(g, 610, 120, 26); destello(g, 210, 300, 16);
   pj(g, 'k', 400, 560, 470, -0.04);
   cinta(g, 'SOY', 400, 545, 58, -0.05);
   wordmark(g, 'KURIOSO', 400, 650, 128);
