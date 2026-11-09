@@ -1,0 +1,189 @@
+{
+ "lineas": [
+  {
+   "id": 0,
+   "escena": "intro",
+   "quien": "NAR",
+   "texto": "[curious] ¿Sabías que cuando te enamoras, tu cerebro se activa parecido a cuando comes tu postre favorito? Mira lo que pasa por dentro."
+  },
+  {
+   "id": 1,
+   "escena": "cafe",
+   "quien": "CHA",
+   "texto": "[friendly, cheerful] ¡Hola! ¿Tú eres el de la clase de biología, verdad?"
+  },
+  {
+   "id": 2,
+   "escena": "cafe",
+   "quien": "CHO",
+   "texto": "[nervous, stuttering] Eh... sí... no... ¡sí! Hola."
+  },
+  {
+   "id": 3,
+   "escena": "alarma",
+   "quien": "ADR",
+   "texto": "[shouting] ¡Alerta! ¡Alerta! ¡Persona linda a la vista! ¡Todos a sus puestos!"
+  },
+  {
+   "id": 4,
+   "escena": "alarma",
+   "quien": "CER",
+   "texto": "[panicking] ¿Qué? ¿Ahora? ¡Nadie me avisó! ¡No estoy peinado!"
+  },
+  {
+   "id": 5,
+   "escena": "alarma",
+   "quien": "ADR",
+   "texto": "[excited, shouting] ¡Corazón! ¡Máxima velocidad!"
+  },
+  {
+   "id": 6,
+   "escena": "gym",
+   "quien": "COR",
+   "texto": "[confident, relaxed] Tranquilos, tengo todo bajo control. Sesenta latidos por minuto, relajadito."
+  },
+  {
+   "id": 7,
+   "escena": "gym",
+   "quien": "ADR",
+   "texto": "[shouting] ¡Te está sonriendo!"
+  },
+  {
+   "id": 8,
+   "escena": "gym",
+   "quien": "COR",
+   "texto": "[panicking, fast] ¡Cien! ¡Ciento veinte! ¡Me voy a salir del pecho!"
+  },
+  {
+   "id": 9,
+   "escena": "gym",
+   "quien": "NAR",
+   "texto": "La adrenalina acelera tu corazón y hace que te suden las manos. Tu cuerpo reacciona como si hubiera peligro... aunque solo te dijeron hola."
+  },
+  {
+   "id": 10,
+   "escena": "estomago",
+   "quien": "EST",
+   "texto": "[calm, cozy] Ay, qué tarde tan tranquila. Mi tecito, mi mantita..."
+  },
+  {
+   "id": 11,
+   "escena": "estomago",
+   "quien": "EST",
+   "texto": "[shocked] ¿Y estas mariposas? ¿Quién las dejó entrar?"
+  },
+  {
+   "id": 12,
+   "escena": "estomago",
+   "quien": "ADR",
+   "texto": "[shouting] ¡Órdenes de arriba! ¡La sangre se va a los músculos, por si hay que salir corriendo!"
+  },
+  {
+   "id": 13,
+   "escena": "estomago",
+   "quien": "EST",
+   "texto": "[laughing, ticklish] ¡Ja, ja, ja, no, me hacen cosquillas! ¡Ya ni tengo hambre!"
+  },
+  {
+   "id": 14,
+   "escena": "fiesta",
+   "quien": "DOP",
+   "texto": "[cool, excited] ¡Qué onda, cerebro! Llegó la Dopamina. ¡Que empiece la fiesta!"
+  },
+  {
+   "id": 15,
+   "escena": "fiesta",
+   "quien": "NAR",
+   "texto": "La dopamina es la sustancia de la recompensa. Te hace sentir feliz... y que solo pienses en esa persona."
+  },
+  {
+   "id": 16,
+   "escena": "fiesta",
+   "quien": "CER",
+   "texto": "[dreamy, in love] Su risa... su café... su forma de respirar..."
+  },
+  {
+   "id": 17,
+   "escena": "fiesta",
+   "quien": "DOP",
+   "texto": "[laughing] ¡Se te apagó el sentido crítico, amigo! ¡Ahora todo de ella te parece perfecto!"
+  },
+  {
+   "id": 18,
+   "escena": "mensaje",
+   "quien": "CER",
+   "texto": "[mischievous] Le voy a escribir algo casual: Hola, ¿quieres casarte conmigo?"
+  },
+  {
+   "id": 19,
+   "escena": "mensaje",
+   "quien": "COR",
+   "texto": "[screaming] ¡Noooo! ¡Bórralo, bórralo!"
+  },
+  {
+   "id": 20,
+   "escena": "mensaje",
+   "quien": "CER",
+   "texto": "[innocent, quiet] ... Ya lo envié."
+  },
+  {
+   "id": 21,
+   "escena": "mensaje",
+   "quien": "EST",
+   "texto": "[deadpan] Yo me voy a vomitar mariposas."
+  },
+  {
+   "id": 22,
+   "escena": "mensaje",
+   "quien": "CHA",
+   "texto": "[laughing] ¡Ja, ja! Eres muy chistoso. ¿Vamos por un café mañana?"
+  },
+  {
+   "id": 23,
+   "escena": "mensaje",
+   "quien": "COR",
+   "texto": "[shouting with joy] ¡Dijo que sí!"
+  },
+  {
+   "id": 24,
+   "escena": "calma",
+   "quien": "OXI",
+   "texto": "[soft, sweet] Hola, chicos. Yo soy la Oxitocina. Aparezco con los abrazos y cuando se toman de la mano."
+  },
+  {
+   "id": 25,
+   "escena": "calma",
+   "quien": "OXI",
+   "texto": "[warm] La adrenalina se calma, y lo que queda es confianza y cariño."
+  },
+  {
+   "id": 26,
+   "escena": "calma",
+   "quien": "COR",
+   "texto": "[relaxed sigh] Ahhh... setenta latidos. Esto sí es amor."
+  },
+  {
+   "id": 27,
+   "escena": "calma",
+   "quien": "ADR",
+   "texto": "[exhausted, yawning] Bueno... yo me voy a dormir. Avísenme si aparece otra persona linda."
+  },
+  {
+   "id": 28,
+   "escena": "final",
+   "quien": "NAR",
+   "texto": "[cheerful] Así que la próxima vez que te enamores, recuerda: no es magia... ¡es química! Si te gustó, ¡sé Kurioso y suscríbete!"
+  }
+ ],
+ "voces": {
+  "NAR": "2CGcaXd1E04jesxY7nfq",
+  "CHA": "zJtOCbdQjTZt7YZtkRDP",
+  "CHO": "zSPJ694fdnzmEKl5n9wI",
+  "ADR": "tbfu7H6JPPlpF9clW89V",
+  "CER": "pmbvTcigLSLJPZPWD6QD",
+  "COR": "JIfdwGbJNfJKbPNRYqP2",
+  "EST": "iV6xDQ4wcM3ZcXDx30GB",
+  "DOP": "Xnh22ooxCd2PB5Lf28Bv",
+  "OXI": "CPv3Zr3CQCqE4ZzuCgBP"
+ }
+}
