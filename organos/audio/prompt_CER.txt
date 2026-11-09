@@ -1,0 +1,13 @@
+[alarmed] ¿Quién te dejó pasar? ¡Esta es la sala de control!
+
+[long pause]
+
+[panicking] ¡No, no, no! ¡Ese es el freno! Si lo bajas, la persona va a decir cosas que mañana no va a querer recordar.
+
+[long pause]
+
+[dizzy, confused] Y ahora el cerebelo no encuentra el equilibrio... ¿por qué se mueve el piso?
+
+[long pause]
+
+[whispering, in pain] Nadie hable fuerte, por favor.

@@ -1,0 +1,194 @@
+{
+ "lineas": [
+  {
+   "id": 0,
+   "escena": "intro",
+   "quien": "NAR",
+   "texto": "[curious] ¿Sabías que tu hígado solo puede procesar más o menos un trago por hora? Y no hay forma de apurarlo."
+  },
+  {
+   "id": 1,
+   "escena": "intro",
+   "quien": "NAR",
+   "texto": "[excited] Esto es lo que pasa dentro de ti cuando bebes alcohol."
+  },
+  {
+   "id": 2,
+   "escena": "estomago",
+   "quien": "ETA",
+   "texto": "[excited, shouting] ¡Wiiiii! ¡Llegó la fiesta!"
+  },
+  {
+   "id": 3,
+   "escena": "estomago",
+   "quien": "EST",
+   "texto": "[grumpy, annoyed] Ay, no... otra vez tú. Cada vez que vienes me irritas las paredes."
+  },
+  {
+   "id": 4,
+   "escena": "estomago",
+   "quien": "ETA",
+   "texto": "[playful] Tranqui, panza. Solo me quedo un poquito aquí. Lo demás se va al intestino, y de ahí, a la sangre."
+  },
+  {
+   "id": 5,
+   "escena": "estomago",
+   "quien": "EST",
+   "texto": "[sarcastic, grumpy] Perfecto. Y yo me quedo aquí soltando ácido... como siempre."
+  },
+  {
+   "id": 6,
+   "escena": "cerebro",
+   "quien": "ETA",
+   "texto": "[excited] ¡Cerebro! ¡Llegué en menos de cinco minutos!"
+  },
+  {
+   "id": 7,
+   "escena": "cerebro",
+   "quien": "CER",
+   "texto": "[alarmed] ¿Quién te dejó pasar? ¡Esta es la sala de control!"
+  },
+  {
+   "id": 8,
+   "escena": "cerebro",
+   "quien": "ETA",
+   "texto": "[mischievous] A ver... ¿y qué hace esta palanquita de aquí?"
+  },
+  {
+   "id": 9,
+   "escena": "cerebro",
+   "quien": "CER",
+   "texto": "[panicking] ¡No, no, no! ¡Ese es el freno! Si lo bajas, la persona va a decir cosas que mañana no va a querer recordar."
+  },
+  {
+   "id": 10,
+   "escena": "cerebro",
+   "quien": "ETA",
+   "texto": "[innocent] Uy. Ya lo bajé."
+  },
+  {
+   "id": 11,
+   "escena": "cerebro",
+   "quien": "CER",
+   "texto": "[dizzy, confused] Y ahora el cerebelo no encuentra el equilibrio... ¿por qué se mueve el piso?"
+  },
+  {
+   "id": 12,
+   "escena": "rinones",
+   "quien": "RI1",
+   "texto": "[worried] Oye, hermana... se cortó la señal de la hormona que guarda el agua."
+  },
+  {
+   "id": 13,
+   "escena": "rinones",
+   "quien": "RI2",
+   "texto": "[dramatic] ¡Fue el alcohol! Sin esa señal... ¡toda el agua se va para afuera!"
+  },
+  {
+   "id": 14,
+   "escena": "rinones",
+   "quien": "RI1",
+   "texto": "[exasperated] Que alguien le diga que vaya al baño. Otra vez."
+  },
+  {
+   "id": 15,
+   "escena": "bano",
+   "quien": "NAR",
+   "texto": "Por eso, cuando bebes, vas tanto al baño... y te deshidratas."
+  },
+  {
+   "id": 16,
+   "escena": "higado",
+   "quien": "HIG",
+   "texto": "[tired, flat] Siguiente. Fila de espera: cuatro tragos. Y yo trabajo a un trago por hora."
+  },
+  {
+   "id": 17,
+   "escena": "higado",
+   "quien": "ETA",
+   "texto": "[cheeky] ¿Y no puedes ir más rápido, gordito?"
+  },
+  {
+   "id": 18,
+   "escena": "higado",
+   "quien": "HIG",
+   "texto": "[firm] No. Ni el café, ni la ducha fría, ni nada me apura. Pasa a la máquina."
+  },
+  {
+   "id": 19,
+   "escena": "higado",
+   "quien": "ACE",
+   "texto": "[evil laugh] ¡Ja, ja, ja! Ahora soy acetaldehído... ¡y soy más tóxico que antes!"
+  },
+  {
+   "id": 20,
+   "escena": "higado",
+   "quien": "HIG",
+   "texto": "[unimpressed] Sí, sí, ya te conozco. Tú causas parte de la resaca. A la segunda máquina."
+  },
+  {
+   "id": 21,
+   "escena": "higado",
+   "quien": "ACE",
+   "texto": "[screaming] ¡Nooo! ¡Me están desarmando!"
+  },
+  {
+   "id": 22,
+   "escena": "higado",
+   "quien": "HIG",
+   "texto": "[satisfied] Listo. Ahora eres acetato: inofensivo. Al final vas a salir como agua y dióxido de carbono."
+  },
+  {
+   "id": 23,
+   "escena": "manana",
+   "quien": "NAR",
+   "texto": "[soft] A la mañana siguiente..."
+  },
+  {
+   "id": 24,
+   "escena": "manana",
+   "quien": "CER",
+   "texto": "[whispering, in pain] Nadie hable fuerte, por favor."
+  },
+  {
+   "id": 25,
+   "escena": "manana",
+   "quien": "EST",
+   "texto": "[groaning] Yo sigo ardiendo."
+  },
+  {
+   "id": 26,
+   "escena": "manana",
+   "quien": "RI2",
+   "texto": "[weak] Y nosotras estamos secas. Agua, por favor."
+  },
+  {
+   "id": 27,
+   "escena": "manana",
+   "quien": "HIG",
+   "texto": "[warm, advising] Consejo de tu hígado: toma agua entre trago y trago, come algo antes... y dame tiempo."
+  },
+  {
+   "id": 28,
+   "escena": "final",
+   "quien": "ETA",
+   "texto": "[cheerful] ¡Nos vemos en la próxima fiesta! [pause] O mejor... no tan seguido."
+  },
+  {
+   "id": 29,
+   "escena": "final",
+   "quien": "NAR",
+   "texto": "[excited] Y si te gustó, ¡suscríbete!"
+  }
+ ],
+ "voces": {
+  "NAR": "JIfdwGbJNfJKbPNRYqP2",
+  "ETA": "zSPJ694fdnzmEKl5n9wI",
+  "EST": "VXZKNah1ssrzM8c81OiY",
+  "CER": "pmbvTcigLSLJPZPWD6QD",
+  "RI1": "iV6xDQ4wcM3ZcXDx30GB",
+  "RI2": "zJtOCbdQjTZt7YZtkRDP",
+  "HIG": "u4L1errSjs4GPNGP5O5U",
+  "ACE": "OLmSqlYzB06EIKJRy5b0"
+ }
+}
